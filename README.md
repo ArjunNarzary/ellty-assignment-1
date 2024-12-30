@@ -1,13 +1,13 @@
 # Ellty First Test Assignment
 
-## Technolgies and Libreries user
+## Technologies and Libreries used
 
 - React
 - Vite
 - TypeScript
 - Css
 
-## Run below commands to run the project
+## Run below command to run the project
 
 ```js
 npm install
