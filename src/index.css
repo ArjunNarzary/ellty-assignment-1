@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Montserrat", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+  --yellow: #ffce22;
+  --font-color: #1f2128;
+  --border-color: #eeeeee;
+  --checked-color: rgba(36, 105, 246, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--font-color);
+}
+
+.button {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 4px;
+}
+
+.button-margin {
+  margin-top: 2rem;
+}
+
+.container {
+  padding-top: 5rem;
+}
+
+.main-section {
+  margin: 0 auto;
+  max-width: 43rem;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: rgba(20, 20, 20, 0.12) 0px 10px 15px;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  margin: 10px 0;
+}
+
+.checkbox-wrapper {
+  padding: 0.5rem 0;
+  height: 2.65rem;
+}
+.checkbox-wrapper .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 100%;
+}
+input[type="checkbox"] {
+  appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--checked-color);
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 5px;
+  height: 13px;
+  border: 1px solid transparent;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+
+input[type="checkbox"]:checked::before {
+  border-color: #fff;
+}
+
+input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+}
+
+input[type="checkbox"]:checked:disabled {
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked:disabled::before {
+  border-color: rgba(135, 135, 135, 1);
+}
