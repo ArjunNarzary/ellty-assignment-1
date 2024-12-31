@@ -9,8 +9,8 @@
   font-weight: 400;
   --yellow: #ffce22;
   --font-color: #1f2128;
-  --border-color: #eeeeee;
-  --checked-color: rgba(36, 105, 246, 1);
+  --border-color: #cdcdcd;
+  --checked-color: #5087f8;
 }
 
 body {
@@ -34,13 +34,13 @@ body {
 }
 
 .container {
-  padding-top: 5rem;
+  padding: 5rem 1rem 2rem 1rem;
 }
 
 .main-section {
   margin: 0 auto;
   max-width: 43rem;
-  border: 1px solid var(--border-color);
+  border: 1px solid #eeeeee;
   padding: 2rem;
   border-radius: 6px;
   box-shadow: rgba(20, 20, 20, 0.12) 0px 10px 15px;
@@ -74,6 +74,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked {
   background-color: var(--checked-color);
+  border-color: var(--checked-color);
   position: relative;
 }
 
@@ -100,6 +101,7 @@ input[type="checkbox"]:disabled {
 
 input[type="checkbox"]:checked:disabled {
   background-color: transparent;
+  border-color: var(--border-color);
 }
 
 input[type="checkbox"]:checked:disabled::before {
